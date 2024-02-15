@@ -176,10 +176,11 @@ function calcularEdad(anoNacimiento, anoActual) {
 function presentarse() {
     let nombre = prompt("Ingresa tu nombre:");
     let anoNacimiento = prompt("Ingresa tu año de nacimiento:");
-    let anoActual = new Date().getFullYear();
+    let anoActual = new Date().getFullYear();//Googlee como obtener el año actual
     let edad = calcularEdad(anoNacimiento, anoActual);
     let saludo = saludar(nombre);
    
     alert(`${saludo}. Tengo ${edad} años.`);
 }
+
 presentarse();
